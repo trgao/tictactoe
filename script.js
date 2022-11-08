@@ -130,7 +130,7 @@ const gameController = function() {
     function playGame() {
         if (state === 0) {
             if (checkBoard() !== undefined) {
-                return endGame();
+                return endGame(checkBoard());
             }
             if (turn === 1) {
                 if (player1 === 'player') {
